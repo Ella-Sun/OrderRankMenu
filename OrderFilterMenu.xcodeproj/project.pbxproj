@@ -21,6 +21,7 @@
 		44FDFAE01DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFAD81DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.m */; };
 		44FDFAE11DC1D0510061B3EE /* RankFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFADA1DC1D0510061B3EE /* RankFilterCell.m */; };
 		44FDFAE21DC1D0510061B3EE /* RankRuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFADC1DC1D0510061B3EE /* RankRuleView.m */; };
+		44FDFAE41DC1D57D0061B3EE /* OrderRankMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 44FDFAE31DC1D57D0061B3EE /* OrderRankMenu.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		44FDFADA1DC1D0510061B3EE /* RankFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankFilterCell.m; sourceTree = "<group>"; };
 		44FDFADB1DC1D0510061B3EE /* RankRuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankRuleView.h; sourceTree = "<group>"; };
 		44FDFADC1DC1D0510061B3EE /* RankRuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankRuleView.m; sourceTree = "<group>"; };
+		44FDFAE31DC1D57D0061B3EE /* OrderRankMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OrderRankMenu.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		44FDFA9D1DC1D01E0061B3EE /* OrderFilterMenu */ = {
 			isa = PBXGroup;
 			children = (
+				44FDFAE31DC1D57D0061B3EE /* OrderRankMenu.gif */,
 				44FDFAD11DC1D0510061B3EE /* FilterView */,
 				44FDFAA11DC1D01E0061B3EE /* AppDelegate.h */,
 				44FDFAA21DC1D01E0061B3EE /* AppDelegate.m */,
@@ -286,6 +289,7 @@
 				44FDFAAE1DC1D01E0061B3EE /* LaunchScreen.storyboard in Resources */,
 				44FDFAAB1DC1D01E0061B3EE /* Assets.xcassets in Resources */,
 				44FDFAA91DC1D01E0061B3EE /* Main.storyboard in Resources */,
+				44FDFAE41DC1D57D0061B3EE /* OrderRankMenu.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

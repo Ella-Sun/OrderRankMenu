@@ -64,7 +64,7 @@
  */
 - (NSDictionary *)accordDateTypeGetBeginAndEndDate:(DateType)type {
     
-    NSString *startDateStr, *endDateStr;
+    NSString *startDateStr = @"", *endDateStr = @"";
     switch (type) {
         case DateTypeDefault: //全部
         {
@@ -94,20 +94,18 @@
  */
 - (NSDictionary *)accordMoneyTypeGetBeginAndEndMoney:(MoneyType)type {
     
-    NSString *minAmountStr, *maxAmountStr;
+    NSString *minAmountStr = @"", *maxAmountStr = @"";
     switch (type) {
         case MoneyTypeDefault: //// 全部
         {
-            minAmountStr = nil;
-            maxAmountStr = nil;
+            
         }
             break;
         
         //自己添加需要的枚举
         default:
         {
-            minAmountStr = nil;
-            maxAmountStr = nil;
+            
         }
             break;
     }
