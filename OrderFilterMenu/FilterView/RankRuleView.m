@@ -300,5 +300,17 @@ static CGFloat aniDuration = 0.5f;
     self.selectRankIndex = selectIndex;
 }
 
+- (void)filterDismiss {
+    
+    self.selectRankIndex = -1;
+    
+    [self.filterView filterViewDismiss];
+    if (self.rankButton.selected) {
+        [self dismiss];
+    }
+    
+}
+
+
 
 @end

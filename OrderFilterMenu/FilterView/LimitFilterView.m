@@ -52,6 +52,14 @@ static CGFloat aniDuration = 0.5f;
 
 @implementation LimitFilterView
 
+- (void)filterViewDismiss {
+    
+    self.selectDate = -1;
+    self.selectMoney = -1;
+    
+    [self allSubviewsToOrigin];
+}
+
 - (void)dismiss {
     
     __weak typeof(self)weakSelf = self;
@@ -59,6 +67,11 @@ static CGFloat aniDuration = 0.5f;
         NSLog(@"%ld---%ld",weakSelf.selectDate,weakSelf.selectMoney);
         self.LimitFilterBlock(weakSelf.selectDate, weakSelf.selectMoney);
     }
+    
+    [self allSubviewsToOrigin];
+}
+
+- (void)allSubviewsToOrigin {
     
     CGRect tabelFrame = self.showTableView.frame;
     tabelFrame.size.height = 1;
@@ -75,14 +88,13 @@ static CGFloat aniDuration = 0.5f;
                          [self.bMaskView removeFromSuperview];
                          self.bMaskView = nil;
                      }];
-
+    
     self.dateButton.selected = NO;
     self.dateButton.imageView.transform = CGAffineTransformIdentity;
     self.moneyButton.selected = NO;//使按钮颜色改变
     self.moneyButton.imageView.transform = CGAffineTransformIdentity;
     
     self.selectFilter = -1;//否则再次出现下拉菜单 不能重建tableview
-    
 }
 
 - (instancetype)initWithFrame:(CGRect)frame superView:(UIView *)view {
@@ -95,9 +107,9 @@ static CGFloat aniDuration = 0.5f;
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
-        self.dateAry = [NSDictionary alloc].dateAry;//@[@"全部",@"当日",@"本周内",@"本月内",@"上月内"];
-        self.moneyAry = [NSDictionary alloc].moneyAry;//@[@"全部",@"1000以内",@"10000以内",@"1万~10万及以内",@"10万~50万及以内",@"50万以上"];
+        self.backgroundColor = [UIColor whiteColor];
+        self.dateAry = [NSDictionary alloc].dateAry;
+        self.moneyAry = [NSDictionary alloc].moneyAry;
         
         self.selectDate = -1;
         self.selectMoney = -1;

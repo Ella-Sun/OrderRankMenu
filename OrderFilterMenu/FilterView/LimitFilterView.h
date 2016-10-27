@@ -30,4 +30,10 @@
 - (void)tapFilterAction:(UIButton *)sender;
 
 
+/**
+ 不进行传值的非正常消失
+ */
+- (void)filterViewDismiss;
+
+
 @end

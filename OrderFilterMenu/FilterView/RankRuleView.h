@@ -21,4 +21,10 @@
 - (instancetype)initWithFrame:(CGRect)frame superView:(UIView *)view;
 
 
+/**
+ 不进行传值的非正常消失
+ */
+- (void)filterDismiss;
+
+
 @end

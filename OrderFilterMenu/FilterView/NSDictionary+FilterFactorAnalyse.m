@@ -21,12 +21,12 @@
 
 - (NSArray *)moneyAry {
 
-    return @[@"全部",@"1000以内",@"10000以内",@"1万~10万及以内",@"10万~50万及以内",@"50万以上"];
+    return @[@"全部",@"100以内",@"1000以内",@"1000~5000",@"5000~1万及以内",@"1万以上"];
 }
 
 - (NSArray *)dateAry {
     
-    return  @[@"全部",@"当日",@"本周内",@"本月内",@"上月内"];
+    return  @[@"全部",@"当日",@"本周内",@"本月内",@"本年内"];
 }
 
 - (NSString *)accordRankIndexGetRankSerialNum:(NSInteger)rankIndex andRankType:(NSInteger)type {
