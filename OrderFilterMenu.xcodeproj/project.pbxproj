@@ -15,6 +15,12 @@
 		44FDFAAE1DC1D01E0061B3EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FDFAAC1DC1D01E0061B3EE /* LaunchScreen.storyboard */; };
 		44FDFAB91DC1D01E0061B3EE /* OrderFilterMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFAB81DC1D01E0061B3EE /* OrderFilterMenuTests.m */; };
 		44FDFAC41DC1D01E0061B3EE /* OrderFilterMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFAC31DC1D01E0061B3EE /* OrderFilterMenuUITests.m */; };
+		44FDFADD1DC1D0510061B3EE /* FilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFAD31DC1D0510061B3EE /* FilterButton.m */; };
+		44FDFADE1DC1D0510061B3EE /* icon_sort_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 44FDFAD41DC1D0510061B3EE /* icon_sort_arrow.png */; };
+		44FDFADF1DC1D0510061B3EE /* LimitFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFAD61DC1D0510061B3EE /* LimitFilterView.m */; };
+		44FDFAE01DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFAD81DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.m */; };
+		44FDFAE11DC1D0510061B3EE /* RankFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFADA1DC1D0510061B3EE /* RankFilterCell.m */; };
+		44FDFAE21DC1D0510061B3EE /* RankRuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDFADC1DC1D0510061B3EE /* RankRuleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		44FDFABF1DC1D01E0061B3EE /* OrderFilterMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderFilterMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FDFAC31DC1D01E0061B3EE /* OrderFilterMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderFilterMenuUITests.m; sourceTree = "<group>"; };
 		44FDFAC51DC1D01E0061B3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FDFAD21DC1D0510061B3EE /* FilterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterButton.h; sourceTree = "<group>"; };
+		44FDFAD31DC1D0510061B3EE /* FilterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterButton.m; sourceTree = "<group>"; };
+		44FDFAD41DC1D0510061B3EE /* icon_sort_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_sort_arrow.png; sourceTree = "<group>"; };
+		44FDFAD51DC1D0510061B3EE /* LimitFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitFilterView.h; sourceTree = "<group>"; };
+		44FDFAD61DC1D0510061B3EE /* LimitFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitFilterView.m; sourceTree = "<group>"; };
+		44FDFAD71DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FilterFactorAnalyse.h"; sourceTree = "<group>"; };
+		44FDFAD81DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FilterFactorAnalyse.m"; sourceTree = "<group>"; };
+		44FDFAD91DC1D0510061B3EE /* RankFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankFilterCell.h; sourceTree = "<group>"; };
+		44FDFADA1DC1D0510061B3EE /* RankFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankFilterCell.m; sourceTree = "<group>"; };
+		44FDFADB1DC1D0510061B3EE /* RankRuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankRuleView.h; sourceTree = "<group>"; };
+		44FDFADC1DC1D0510061B3EE /* RankRuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankRuleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,7 @@
 		44FDFA9D1DC1D01E0061B3EE /* OrderFilterMenu */ = {
 			isa = PBXGroup;
 			children = (
+				44FDFAD11DC1D0510061B3EE /* FilterView */,
 				44FDFAA11DC1D01E0061B3EE /* AppDelegate.h */,
 				44FDFAA21DC1D01E0061B3EE /* AppDelegate.m */,
 				44FDFAA41DC1D01E0061B3EE /* ViewController.h */,
@@ -138,6 +156,24 @@
 				44FDFAC51DC1D01E0061B3EE /* Info.plist */,
 			);
 			path = OrderFilterMenuUITests;
+			sourceTree = "<group>";
+		};
+		44FDFAD11DC1D0510061B3EE /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				44FDFAD21DC1D0510061B3EE /* FilterButton.h */,
+				44FDFAD31DC1D0510061B3EE /* FilterButton.m */,
+				44FDFAD41DC1D0510061B3EE /* icon_sort_arrow.png */,
+				44FDFAD51DC1D0510061B3EE /* LimitFilterView.h */,
+				44FDFAD61DC1D0510061B3EE /* LimitFilterView.m */,
+				44FDFAD71DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.h */,
+				44FDFAD81DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.m */,
+				44FDFAD91DC1D0510061B3EE /* RankFilterCell.h */,
+				44FDFADA1DC1D0510061B3EE /* RankFilterCell.m */,
+				44FDFADB1DC1D0510061B3EE /* RankRuleView.h */,
+				44FDFADC1DC1D0510061B3EE /* RankRuleView.m */,
+			);
+			path = FilterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FDFADE1DC1D0510061B3EE /* icon_sort_arrow.png in Resources */,
 				44FDFAAE1DC1D01E0061B3EE /* LaunchScreen.storyboard in Resources */,
 				44FDFAAB1DC1D01E0061B3EE /* Assets.xcassets in Resources */,
 				44FDFAA91DC1D01E0061B3EE /* Main.storyboard in Resources */,
@@ -273,9 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FDFAE21DC1D0510061B3EE /* RankRuleView.m in Sources */,
 				44FDFAA61DC1D01E0061B3EE /* ViewController.m in Sources */,
+				44FDFAE01DC1D0510061B3EE /* NSDictionary+FilterFactorAnalyse.m in Sources */,
 				44FDFAA31DC1D01E0061B3EE /* AppDelegate.m in Sources */,
 				44FDFAA01DC1D01E0061B3EE /* main.m in Sources */,
+				44FDFAE11DC1D0510061B3EE /* RankFilterCell.m in Sources */,
+				44FDFADF1DC1D0510061B3EE /* LimitFilterView.m in Sources */,
+				44FDFADD1DC1D0510061B3EE /* FilterButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
