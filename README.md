@@ -6,6 +6,7 @@
 <br><br>
 ***最原始的是可以进行金额、日期的筛选，效果如下：***
 <br>
+![筛选](https://github.com/Sun-Hong/OrderRankMenu/blob/master/OrderFilterMenu/FilterMenu.gif)
 
 
 
